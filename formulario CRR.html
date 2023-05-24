@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        img{
+            width: 200px;
+        }
+        label{
+            color: rgb(255, 160, 150);
+        }
+
+        .no{
+            color: black;
+        }
+        
+        .si{color: blue;}
+
+    </style>
+
+</head>
+<body>
+    
+        <form action="http://192.168.0.80/bti-7/index.php" method="post">
+
+            <div>
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="Contraseña">
+                    
+                </div>
+                <label for="Nombre">Sexo</label>
+                <div>
+                <label class="no" for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="sexo" value="hombre">
+                <label class="no" for="payo">Femenino</label>
+                <input type="radio" name="sexo" id="sexo" value="femenino">
+                <label class="no" for="sexo">Otro</label>
+                <input type="radio" name="sexo" id="otro" value="otro">
+            </div>
+            <label class="si" for="Nombre"> Selecione su favorito</label>
+            <div>
+            <label for="sopa"><img src="./../sopa.jfif" alt=""></label>
+            <input type="radio" name="comida tipica" id="sopa" value="sopa">
+            <label for="mbeju"><img src="./../mbeju1.jfif" alt=""></label>
+            <input type="radio" name="comida tipica" id="mbeju" value="mbeju">
+            <label for="chipa"><img src="./../Chipá2.jpg" alt=""></label>
+            <input type="radio" name="comida tipica" id="chipa" value="chipa">
+            </div>
+        
+            <input type="hidden" name="particpante" value="camila">
+            <input type="submit" value="enviar">
+        </form>
+    </body>
+
+</html>
+</body>
+
+</html>
